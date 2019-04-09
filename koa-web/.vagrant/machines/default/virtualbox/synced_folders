@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"create":true,"type":"virtualbox","SharedFoldersEnableSymlinksCreate":false,"guestpath":"/vagrant","hostpath":"/Users/jinseok/joyful-develop/vagrant/koa-web/project","disabled":false,"__vagrantfile":true}}}

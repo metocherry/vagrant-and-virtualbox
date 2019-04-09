@@ -1,0 +1,20 @@
+# Editors
+.vscode
+.idea
+.classpath
+
+# Proejct
+dist
+coverage
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
+
+# Caches
+.cache
+
+# OS
+.DS_Store
