@@ -4,6 +4,7 @@
 
 - [Install](#install)
 - [Access PostgreSQL](#access-postgresql)
+  - [Access Command Line](#access-command-line)
 - [Use sample dvdrental](#use-sample-dvdrental)
 - [PSQL Command Lines](#psql-command-lines)
   - [Database](#database)
@@ -37,6 +38,8 @@ sudo systemctl enable postgresql-11
 
 ## Access PostgreSQL
 
+### Access Command Line
+
 First, set password
 
 ```bash
@@ -50,6 +53,29 @@ su - postgres -c 'psql'
 ```
 
 - `-c` or `--command`: pass a single command to the shell
+
+### Access from external
+
+#### Step 1. Edit `/var/lib/pgsql/11/data/postgresql.conf`
+
+```text
+listen_addresses = '*'
+```
+
+#### Step 2. Edit `/var/lib/pgsql/data/pg_hba.conf`
+
+```text
+# TYPE    DATABASE    USER      ADDRESS       METHOD
+host        all       all       0.0.0.0/0     md5
+```
+
+#### Step 3. Set the initial password
+
+```bash
+su - postgres -c 'psql'
+
+ALTER USER postgres PASSWORD <new_password>;
+```
 
 ## Use sample dvdrental
 
