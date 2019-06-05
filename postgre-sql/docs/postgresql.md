@@ -149,3 +149,7 @@ pg_dump -U db_user -W -F t db_name > /path/to/your/file/dump_name.tar
 ## References
 
 - https://linux4one.com/how-to-install-postgresql-on-centos-7/
+- https://d2.naver.com/helloworld/227936
+- http://softy.co.kr/221402210468
+- http://blog.naver.com/PostView.nhn?blogId=alice_k106&logNo=220847310053&parentCategoryNo=&categoryNo=7&viewDate=&isShowPopularPosts=true&from=search
+- http://postgresql.kr/blog/
