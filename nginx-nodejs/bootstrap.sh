@@ -24,7 +24,7 @@ sudo bash -c 'cat <<EOF >> /etc/yum.repos.d/nginx.repo
 [nginx]
 name=nginx repo
 baseurl=http://nginx.org/packages/centos/\$releasever/\$basearch/
-gpgcheck=0
+gpgkey=http://nginx.org/keys/nginx_signing.key
 enabled=1
 EOF'
 fi
