@@ -23,7 +23,7 @@ if [ ! -f /etc/yum.repos.d/nginx.repo ]; then
 sudo bash -c 'cat <<EOF >> /etc/yum.repos.d/nginx.repo
 [nginx]
 name=nginx repo
-baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+baseurl=http://nginx.org/packages/centos/\$releasever/\$basearch/
 gpgcheck=0
 enabled=1
 EOF'
