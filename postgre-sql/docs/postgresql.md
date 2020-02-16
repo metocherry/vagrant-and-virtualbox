@@ -23,8 +23,7 @@ sudo rpm -Uvh https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64
 sudo yum install -y postgresql11-server postgresql11-contrib
 ```
 
-### Step 3. Initialize data
-
+### Step 3. create a new PostgreSQL database cluster
 ```bash
 sudo /usr/pgsql-11/bin/postgresql-11-setup initdb
 ```
@@ -46,7 +45,7 @@ First, set password
 sudo passwd postgres
 ```
 
-And, connect to postgress
+And, connect to postgres
 
 ```bash
 su - postgres -c 'psql'
